@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2013.12.07., 10:06:39
+    Author     : arpi
+*/
+
+form.inlabel label {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+}
+
+label .check {
+  cursor: pointer;
+}
+
+label input[type="radio"],
+label input[type="checkbox"] {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+}
+input[type="radio"] ~ .check {
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 27px;
+  background: url(../img/radiobutton.png) no-repeat -14px -18px;  
+  background: url(../img/radiobutton.png) no-repeat -9px -14px;  
+  margin-right: 10px;
+}
+
+input[type="checkbox"] ~ .check {
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 27px;
+  background: url(../img/checkbox.png) no-repeat -9px -14px;
+  margin-right: 10px;
+}
+
+label:hover input[type="radio"] ~ .check {
+  background-position: -9px -114px;
+}
+label input[type="radio"]:checked ~ .check {
+  background-position: -9px -214px;
+}
+label:hover input[type="radio"]:checked ~ .check {
+  background-position: -9px -314px;
+}
+
+label:hover input[type="checkbox"] ~ .check {
+  background-position: -9px -114px;
+}
+
+label input[type="checkbox"]:checked ~ .check {
+  background-position: -9px -214px;
+}
+
+label:hover input[type="checkbox"]:checked ~ .check {
+  background-position: -9px -314px;
+}
+input[type="checkbox"] ~ .check.mapIcon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 74px;
+  height: 62px;
+  background: url(../img/map.png) no-repeat 0 -10px;
+}
+
+label:hover input[type="checkbox"] ~ .check.mapIcon {
+  background-position: 0 -138px;
+}
+
+label input[type="checkbox"]:checked ~ .check.mapIcon {
+  background-position: 0 -74px;
+}
+
+input[type="radio"] ~ .check.browserIcon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 128px;
+  height: 128px;
+  background: url(../img/browsers.png) no-repeat 0 0;
+}
+
+input[type="radio"] ~ .check.browserIcon.browserChrome {
+  background-position: 0 0;
+}
+input[type="radio"] ~ .check.browserIcon.browserMozilla {
+  background-position: 0 -128px;
+}
+input[type="radio"] ~ .check.browserIcon.browserIE {
+  background-position: 0 -256px;
+}
+
+label:hover input[type="radio"] ~ .check.browserIcon.browserChrome,
+label input[type="radio"]:checked ~ .check.browserIcon.browserChrome {
+  background-position: -128px 0;
+}
+label:hover input[type="radio"] ~ .check.browserIcon.browserMozilla,
+label input[type="radio"]:checked ~ .check.browserIcon.browserMozilla {
+  background-position: -128px -128px;
+}
+label:hover input[type="radio"] ~ .check.browserIcon.browserIE,
+label input[type="radio"]:checked ~ .check.browserIcon.browserIE {
+  background-position: -128px -256px;
+}
+
+.leftLabel .check {
+  float: right;
+  margin-left: 10px; 
+}

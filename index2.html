@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HTML5 - css3 - masked input / select / radio /checkbox </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="html5 input demo" />
+    <link href='http://fonts.googleapis.com/css?family=Advent+Pro&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,200,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="css/layout.css" rel="stylesheet" media="screen, projection">
+    <link href="css/label.css" rel="stylesheet" media="screen, projection">
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="css/ie-old.css" media="screen, projection">
+    <![endif]-->
+  </head>
+  <body>
+
+    <h2>Label melleti inputok</h2>
+    <form method="post" action="post.php">
+      <fieldset>
+        <legend>Egyszerű radio, checkbox csere</legend>
+        <div class="row">
+          <label for="radio_21">Radio 1</label>
+          <input type="radio" name="radio_21" id="radio_21">
+          <label class="check" for="radio_21"></label>
+          <label for="radio_22">Radio 2</label>
+          <input type="radio" name="radio_21" id="radio_22">
+          <label class="check" for="radio_22"></label>
+        </div>
+        <!--div class="row">
+          <input type="radio" name="radio_23" id="radio_23">
+          <label class="check"></label>
+          <label for="radio_23">Radio 3</label>
+          <input type="radio" name="radio_24" id="radio_24">
+          <label class="check"></label>
+          <label for="radio_24">Radio 4</label>
+        </div-->
+        <div class="row">
+          <label for="check_21">Checkbox 1</label>
+            <input type="checkbox" value="1" name="check_21" id="check_21">
+            <label for="check_21" class="check"></label>
+        </div>
+        <div class="row">
+          <label for="check_22">Checkbox 2</label>
+            <input type="checkbox" value="1" name="check_22" id="check_22">
+            <label for="check_22" class="check"></label>
+        </div>
+
+      </fieldset>
+      <fieldset>
+        <legend>Böngésző választás</legend>
+        <div class="row">
+          <!--label for="check_24">Chrome</label-->
+          <input type="radio" value="chrome" name="browser" id="check_24">
+          <label for="check_24" class="check browserIcon browserChrome"></label>
+          <!--label for="check_25">Mozilla</label--->
+          <input type="radio" value="mozilla" name="browser" id="check_25">
+          <label for="check_25" class="check browserIcon browserMozilla"></label>
+          <!--label for="check_26">Internet Explorer</label-->
+          <input type="radio" value="ie" name="browser" id="check_26">
+          <label for="check_26" class="check browserIcon browserIE"></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="newLine">
+        <legend>Select</legend>
+        <div class="row">
+          <label for="select_21">Select 1</label>
+          <label class="inputSelector">
+            <select id="select_21" name="selector">
+              <option value="1">Első lehetőség</option>
+              <option value="2">Második lehetőség</option>
+              <option value="3">Harmadik lehetőség</option>
+              <option value="4">Negyedik lehetőség, kicsit hosszabb opciós szöveggel</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+      
+        <div class="row">
+          <input type="reset" value="Reset" >
+          <input type="submit" value="OK" >
+        </div>
+      
+    </form>
+    
+    <a href="index.html">Labelbe zárt inputok</a>
+
+  </body>
+</html>

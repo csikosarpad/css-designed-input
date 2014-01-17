@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2013.12.07., 10:06:48
+    Author     : arpi
+*/
+
+.row input[type="radio"],
+.row input[type="checkbox"] {
+  display: none;
+}
+
+input[type="radio"] + .check {
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 27px;
+  background: url(../img/radiobutton.png) no-repeat -14px -18px;  
+  background: url(../img/radiobutton.png) no-repeat -9px -14px;  
+  margin-right: 10px;
+}
+
+input[type="checkbox"] + .check {
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 27px;
+  background: url(../img/checkbox.png) no-repeat -9px -14px;
+  margin-right: 10px;
+}
+
+input[type="radio"] + .check:hover,
+label:hover + input[type="radio"] + .check {
+  background-position: -9px -114px;
+}
+input[type="radio"]:checked + .check:hover,
+label + input[type="radio"]:checked + .check {
+  background-position: -9px -214px;
+}
+input[type="radio"]:checked + .check:hover,
+label:hover + input[type="radio"]:checked + .check {
+  background-position: -9px -314px;
+}
+
+input[type="checkbox"] + .check:hover,
+label:hover + input[type="checkbox"] + .check {
+  background-position: -9px -114px;
+}
+
+label + input[type="checkbox"]:checked + .check {
+  background-position: -9px -214px;
+}
+
+label:hover + input[type="checkbox"]:checked + .check {
+  background-position: -9px -314px;
+}
+
+input[type="radio"] + .check.browserIcon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 126px;
+  height: 126px;
+  background: url(../img/browsers.png) no-repeat 0 0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+input[type="radio"] + .check.browserIcon.browserChrome {
+  background-position: 0 0;
+}
+input[type="radio"] + .check.browserIcon.browserMozilla {
+  background-position: 0 -128px;
+}
+input[type="radio"] + .check.browserIcon.browserIE {
+  background-position: 0 -256px;
+}
+
+
+input[type="radio"] + .check.browserIcon.browserChrome:hover {
+  background-position: -252px 0;
+}
+input[type="radio"]:checked + .check.browserIcon.browserChrome {
+  background-position: -128px 0;
+}
+input[type="radio"]:checked + .check.browserIcon.browserChrome:hover {
+  background-position: -380px 0;
+}
+
+input[type="radio"] + .check.browserIcon.browserMozilla:hover {
+  background-position: -252px -128px;
+}
+input[type="radio"]:checked + .check.browserIcon.browserMozilla {
+  background-position: -128px -128px;
+}
+input[type="radio"]:checked + .check.browserIcon.browserMozilla:hover {
+  background-position: -380px -128px;
+}
+
+input[type="radio"] + .check.browserIcon.browserIE:hover {
+  background-position: -252px -256px;
+}
+input[type="radio"]:checked + .check.browserIcon.browserIE {
+  background-position: -128px -256px;
+}
+input[type="radio"]:checked + .check.browserIcon.browserIE:hover {
+  background-position: -380px -256px;
+}
