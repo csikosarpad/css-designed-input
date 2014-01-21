@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>HTML5 - css3 - masked input / select / radio /checkbox </title>
+    <title>HTML5 - css3 - designed input / select / radio /checkbox </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="html5 input demo" />
-    <link href='http://fonts.googleapis.com/css?family=Advent+Pro&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,200,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Advent+Pro&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,200,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href="css/layout.css" rel="stylesheet" media="screen, projection">
     <link href="css/label.css" rel="stylesheet" media="screen, projection">
     <!--[if lte IE 8]>
@@ -15,10 +15,10 @@
   </head>
   <body>
 
-    <h2>Label melleti inputok</h2>
+    <h2>Label and input elements in a level</h2>
     <form method="post" action="post.php">
       <fieldset>
-        <legend>Egyszerű radio, checkbox csere</legend>
+        <legend>simple designed radio, checkbox</legend>
         <div class="row">
           <label for="radio_21">Radio 1</label>
           <input type="radio" name="radio_21" id="radio_21">
@@ -27,14 +27,6 @@
           <input type="radio" name="radio_21" id="radio_22">
           <label class="check" for="radio_22"></label>
         </div>
-        <!--div class="row">
-          <input type="radio" name="radio_23" id="radio_23">
-          <label class="check"></label>
-          <label for="radio_23">Radio 3</label>
-          <input type="radio" name="radio_24" id="radio_24">
-          <label class="check"></label>
-          <label for="radio_24">Radio 4</label>
-        </div-->
         <div class="row">
           <label for="check_21">Checkbox 1</label>
             <input type="checkbox" value="1" name="check_21" id="check_21">
@@ -48,7 +40,7 @@
 
       </fieldset>
       <fieldset>
-        <legend>Böngésző választás</legend>
+        <legend>What is your favorite browser?</legend>
         <div class="row">
           <!--label for="check_24">Chrome</label-->
           <input type="radio" value="chrome" name="browser" id="check_24">
@@ -63,15 +55,15 @@
       </fieldset>
 
       <fieldset class="newLine">
-        <legend>Select</legend>
+        <legend>What is your favorite dessert?</legend>
         <div class="row">
-          <label for="select_21">Select 1</label>
+          <label for="select_21">Desserts</label>
           <label class="inputSelector">
-            <select id="select_21" name="selector">
-              <option value="1">Első lehetőség</option>
-              <option value="2">Második lehetőség</option>
-              <option value="3">Harmadik lehetőség</option>
-              <option value="4">Negyedik lehetőség, kicsit hosszabb opciós szöveggel</option>
+            <select id="select_21" name="dessert">
+              <option value="1">Black Forest Cake</option>
+              <option value="2">Brownies</option>
+              <option value="3">Soft Chocolate Chip Cookies</option>
+              <option value="4">Chocolate Cake</option>
             </select>
           </label>
         </div>
@@ -84,7 +76,7 @@
       
     </form>
     
-    <a href="index.html">Labelbe zárt inputok</a>
+    <a href="index.html">Inputs in &lt;label&gt;</a>
 
   </body>
 </html>
