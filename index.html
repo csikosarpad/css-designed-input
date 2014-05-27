@@ -5,93 +5,80 @@
     <title>HTML5 - css3 - designed input / select / radio /checkbox </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="html5 input demo" />
-    <link href='http://fonts.googleapis.com/css?family=Advent+Pro&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,200,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Advent+Pro&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,200,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href="css/layout.css" rel="stylesheet" media="screen, projection">
-    <link href="css/inlabel.css" rel="stylesheet" media="screen, projection">
+    <link href="css/label.css" rel="stylesheet" media="screen, projection">
     <!--[if lte IE 8]>
       <link rel="stylesheet" href="css/ie-old.css" media="screen, projection">
     <![endif]-->
   </head>
   <body>
-    <h1>HTML5 - css3 - designed input / select / radio /checkbox without JS</h1>
-    <h2>Inputs in &lt;label&gt;</h2>
-    <form method="post" action="post.php" class="inlabel">
+
+    <h2>Label and input elements in a level</h2>
+    <form method="post" action="post.php">
       <fieldset>
         <legend>simple designed radio, checkbox</legend>
-        <div class="row">
-          <label for="radio_01">
-            <input type="radio" name="radio_1" id="radio_01">
-            <span class="check"></span>Radio 1
-          </label>
-          <label for="radio_02">
-            <input type="radio" name="radio_1" id="radio_02">
-            <span class="check"></span>Radio 2
-          </label>
-        </div>
-        <div class="row leftLabel">
-          <label for="radio_03">
-            <input type="radio" name="radio_2" id="radio_03">
-            <span class="check"></span>Radio 3
-          </label>
-          <label for="radio_04">
-            <input type="radio" name="radio_2" id="radio_04">
-            <span class="check"></span>Radio 4
-          </label>
-        </div>
-        <div class="row">
-          <label for="check_01">
-            <input type="checkbox" value="1" name="check_01" id="check_01">
-            <span class="check"></span>Checkbox 1
-          </label>
-        </div>
-        <div class="row">
-          <label for="check_02">
-            <input type="checkbox" value="1" name="check_02" id="check_02">
-            <span class="check"></span>Checkbox 2
-          </label>
+
+		<div class="row">
+          <input type="radio" name="radio_21" id="radio_21" value="r1">
+          <label for="radio_21" class="label-radio">Radio 1</label>
+
+          <input type="radio" name="radio_21" id="radio_22" value="r2">
+		  <label for="radio_22" class="label-radio">Radio 2</label>
         </div>
 
+		<div class="row">
+          <input type="checkbox" value="c3" name="check_21" id="check_21">
+          <label for="check_21" class="label-check">Checkbox 1</label>
+        </div>
+
+		<div class="row reverse-label">
+          <input type="checkbox" value="c4" name="check_22" id="check_22">
+          <label for="check_22" class="label-check">Checkbox 2</label>
+        </div>
+
+		<div class="row">
+          <input type="checkbox" value="c5" name="check_23" id="check_23">
+          <label for="check_23" class="label-check">Checkbox 3</label>
+        </div>
       </fieldset>
+
       <fieldset>
         <legend>What is your favorite browser?</legend>
         <div class="row">
-          <label for="check_04">
-            <input type="radio" value="chrome" name="browser" id="check_04">
-            <span class="check browserIcon browserChrome"></span>
-          </label>
-          <label for="check_05">
-            <input type="radio" value="mozilla" name="browser" id="check_05">
-            <span class="check browserIcon browserMozilla"></span>
-          </label>
-          <label for="check_06">
-            <input type="radio" value="ie" name="browser" id="check_06">
-            <span class="check browserIcon browserIE"></span>
-          </label>
+          <input type="radio" value="chrome" name="browser" id="check_24">
+          <label for="check_24" class="browserIcon browserChrome"></label>
+
+          <input type="radio" value="mozilla" name="browser" id="check_25">
+          <label for="check_25" class="browserIcon browserMozilla"></label>
+
+          <input type="radio" value="ie" name="browser" id="check_26">
+          <label for="check_26" class="browserIcon browserIE"></label>
         </div>
       </fieldset>
 
       <fieldset class="newLine">
         <legend>What is your favorite dessert?</legend>
         <div class="row">
-          <label for="select_01">Desserts</label>
-          <span class="inputSelector">
-            <select id="select_01" name="dessert">
+          <label for="select_21">Desserts</label>
+          <label class="inputSelector">
+            <select id="select_21" name="dessert">
               <option value="1">Black Forest Cake</option>
               <option value="2">Brownies</option>
               <option value="3">Soft Chocolate Chip Cookies</option>
               <option value="4">Chocolate Cake</option>
             </select>
-          </span>
+          </label>
         </div>
       </fieldset>
-      
+
         <div class="row">
           <input type="reset" value="Reset" >
           <input type="submit" value="OK" >
         </div>
-      
+
     </form>
-    <a href="index2.html">Label and input elements in a level</a>
+
   </body>
 </html>
